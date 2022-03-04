@@ -11,7 +11,7 @@ Detects available software on the target and runs an appropriate payload.
 
 ### 1. Start the generator
 
-On your attacking machine, start the generator.  It will auto populate interfaces that have IP addresses and the `curl` command associated with it if no arguments are provided.  Not all interfaces in this output will be relevant and this is only useful if you use an interface name in the request.  
+On your attacking machine, start the generator.  It will auto populate interfaces that have IP addresses and the `curl` command associated with it if no arguments are provided.  Not all interfaces in this output will be relevant.
 
 You can specify the http server listening port as well, otherwise it defaults to 8000.
 
