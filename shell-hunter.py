@@ -88,8 +88,8 @@ class GetHandler(http.server.BaseHTTPRequestHandler):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Automatic payload generation')
-    parser.add_argument('-s', '--server', action='store', type=int, default=8000, help='Python http server listener')
-    parser.add_argument('-l', '--listener', action='store', type=int, default=10001, help='nc listener')
+    parser.add_argument('-s', '--server', action='store', type=int, default=8000, help='Python http server listener.  Default 8000.')
+    parser.add_argument('-l', '--listener', action='store', type=int, default=10001, help='nc listener.  Default 10001.')
     parser.add_argument('-i', '--ipaddress', action='store', type=ip_address, help='IP address')
     parser.add_argument('-I', '--interface', action='store', type=str, help='Interface name')
     args = parser.parse_args()
